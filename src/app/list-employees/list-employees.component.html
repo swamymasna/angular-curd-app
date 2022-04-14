@@ -1,0 +1,29 @@
+<br/><div class="card shadow-lg">
+    <div class="card-body">
+    <h2 class="data3">List Employee Details </h2>
+    <table class="table table-bordered table-hover text-center">
+    <thead>
+        <tr class="data1">
+            <th>Emp Id</th>
+            <th>Emp Name</th>
+            <th>Emp Salary</th>
+            <th>Created Date</th>
+            <th>Updated Date</th>
+            <th colspan="3">Actions</th>
+        </tr>
+    </thead>
+    <tbody class="data2">
+        <tr *ngFor="let emp of employees">
+            <td>{{emp.empId}}</td>
+            <td>{{emp.empName}}</td>
+            <td>{{emp.empSal}}</td>
+            <td>{{emp.createdDate}}</td>
+            <td>{{emp.updatedDate}}</td>
+            <td><button (click)="deleteEmployee(emp.empId)" class="btn btn-danger" >DELETE</button></td>
+            <td><button (click)="updateEmployee(emp.empId)" class="btn btn-primary" >UPDATE</button></td>
+            <td><button (click)="viewEmployee(emp.empId)" class="btn btn-info" >VIEW</button></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>

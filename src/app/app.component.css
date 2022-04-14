@@ -1,0 +1,15 @@
+.data{
+    font-size: 23px;
+}
+
+.ftr{
+
+    bottom: 0%;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 50px;
+    font-size: 23px;
+}

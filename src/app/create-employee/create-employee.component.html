@@ -1,0 +1,23 @@
+<br/><div class="card col-md-4 offset-md-4 offset-md-4 shadow-lg">
+    <div class="card-body">
+        <h2 class="data1">Registration Screen</h2>
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label class="data2">Employee Name</label>
+            </div>
+            <div>
+                <input type="text" name="empName" id="empName" [(ngModel)]="employee.empName" class="form-control data3" />
+            </div><br />
+
+            <div class="form-group">
+                <label class="data2">Employee Salary</label>
+            </div>
+            <div>
+                <input type="text" name="empSal" id="empSal" [(ngModel)]="employee.empSal" class="form-control data3" />
+            </div><br />
+
+            <button class="btn btn-primary form-control">Submit</button>
+        </form>
+    </div>
+</div>
+<p class="msg">{{message}}</p>
